@@ -16,7 +16,7 @@ from facts import personality
 assistant = initialize_assistant()
 
 
-class AdvancedMath(Skill):
+class Personality(Skill):
     def __init__(self):
         weaviate = Weaviate()
 
