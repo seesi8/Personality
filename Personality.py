@@ -40,7 +40,7 @@ class Personality(Skill):
         """
         Get information about ballbert's personality. For example things that you like or dislike. Also like how you should act. Also you oppinions and facts about issues.
 
-        :param integer question: What you want to know.
+        :param string question: What you want to know.
         :param integer num: How many facts you want.
         :return: The Facts.
         :rtype: Response
