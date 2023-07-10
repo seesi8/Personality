@@ -33,6 +33,8 @@ class Personality(Skill):
 
         weaviate.add_list(facts)
 
+        self.weaviate = weaviate
+
     @reg(name="Exponent")
     def ask_about_personality(self, question, num):
         """
@@ -43,5 +45,5 @@ class Personality(Skill):
         :return: The Facts.
         :rtype: Response
         """
-        res = weaviate.get_relevant(question, num)
+        res = self.weaviate.get_relevant(question, num)
         return Response(succeeded=True, data=res)
