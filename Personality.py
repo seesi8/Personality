@@ -10,8 +10,8 @@ from Hal.Decorators import reg
 from Hal.Skill import Skill
 
 from Hal import initialize_assistant
-from Memory import Weaviate
-from facts import personality
+from .Memory import Weaviate
+from .facts import personality
 
 assistant = initialize_assistant()
 
