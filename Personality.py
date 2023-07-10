@@ -3,8 +3,6 @@ import re
 import time
 from math import sqrt
 
-import weaviate
-
 from Hal.Classes import Response
 from Hal.Decorators import reg
 from Hal.Skill import Skill
