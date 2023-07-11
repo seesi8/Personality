@@ -35,7 +35,7 @@ class Personality(Skill):
 
         self.weaviate = weaviate
 
-    @reg(name="Exponent")
+    @reg(name="Ask About Personality")
     def ask_about_personality(self, question, num):
         """
         Get information about ballbert's personality. For example things that you like or dislike. Also like how you should act. Also you oppinions and facts about issues.
