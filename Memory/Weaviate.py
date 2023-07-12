@@ -2,12 +2,17 @@ import json
 import time
 import weaviate
 from colorama import Fore, Style
+import Config
 
+config = Config()
 
 class Weaviate:
     def __init__(self):
         self.client = weaviate.Client(
             url="http://localhost:8080",  # Replace with your endpoint
+            additional_headers={
+                "X-OpenAI-Api-Key": config["OPENAI_API_KEY"],
+            },
         )
         self.vec_num = 0
         self.class_obj = {
