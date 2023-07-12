@@ -2,7 +2,7 @@ import json
 import time
 import weaviate
 from colorama import Fore, Style
-import Config
+from Config import Config
 
 config = Config()
 
