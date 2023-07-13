@@ -9,7 +9,7 @@ config = Config()
 class Weaviate:
     def __init__(self):
         self.client = weaviate.Client(
-            url="http://localhost:8080",  # Replace with your endpoint
+            embedded_options=weaviate.EmbeddedOptions(),
             additional_headers={
                 "X-OpenAI-Api-Key": config["OPENAI_API_KEY"],
             },
